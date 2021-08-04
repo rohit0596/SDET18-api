@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\SDET18-API\APIProject\testng.xml</span>
+                    <span>D:\SDET18-API\APIProject\testngParam.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ty.APIProject.CreateProjectTest" class="method navigator-link" hash-for-method="createProjectTest">createProjectTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ty.APIProject.ParameterizedClassTest" class="method navigator-link" hash-for-method="parameterizedData">parameterizedData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -134,10 +139,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ty.APIProject.ParameterizedClassTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterizedData">
+                  </a> <!-- parameterizedData -->
+                  <span class="method-name">parameterizedData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\SDET18-API\APIProject\testng.xml</span>
+            <span class="header-content">D:\SDET18-API\APIProject\testngParam.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,6 +166,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.ty.APIProject.ParameterizedClassTest&quot;/&gt;
       &lt;class name=&quot;com.ty.APIProject.CreateProjectTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -160,7 +181,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,11 +207,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createProjectTest')
-data.setCell(0, 2, 'com.ty.APIProject.CreateProjectTest')
-data.setCell(0, 3, 16);
+data.setCell(0, 1, 'parameterizedData')
+data.setCell(0, 2, 'com.ty.APIProject.ParameterizedClassTest')
+data.setCell(0, 3, 14);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createProjectTest')
+data.setCell(1, 2, 'com.ty.APIProject.CreateProjectTest')
+data.setCell(1, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -221,10 +246,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.ty.APIProject.ParameterizedClassTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parameterizedData</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.ty.APIProject.CreateProjectTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createProjectTest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
